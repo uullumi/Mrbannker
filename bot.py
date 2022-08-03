@@ -39,8 +39,8 @@ BOT_ID = bot_info.id
 
 # USE YOUR ROTATING PROXY API IN DICT FORMAT http://user:pass@providerhost:port
 proxies = {
-           'http': 'http://qnuomzzl-rotate:4i44gnayqk7c@p.webshare.io:80/',
-           'https': 'http://qnuomzzl-rotate:4i44gnayqk7c@p.webshare.io:80/'
+           'http': 'http://jsnvecbk-rotate:ve34q4os7890@p.webshare.io:80/',
+           'https': 'http://jsnvecbk-rotate:ve34q4os7890@p.webshare.io:80/'
 }
 
 session = requests.Session()
@@ -66,7 +66,7 @@ async def is_owner(user_id):
 async def helpstr(message: types.Message):
     # await message.answer_chat_action('typing')
     keyboard_markup = types.InlineKeyboardMarkup(row_width=3)
-    btns = types.InlineKeyboardButton("Bot Source", url="https://github.com/xbinner18/Mrbannker")
+    btns = types.InlineKeyboardButton("Bot Source", url="https://t.me/ccxentool")
     keyboard_markup.row(btns)
     FIRST = message.from_user.first_name
     MSG = f'''
