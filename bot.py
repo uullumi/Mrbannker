@@ -39,8 +39,8 @@ BOT_ID = bot_info.id
 
 # USE YOUR ROTATING PROXY API IN DICT FORMAT http://user:pass@providerhost:port
 proxies = {
-           'http': 'http://jsnvecbk-rotate:ve34q4os7890@p.webshare.io:80/',
-           'https': 'http://jsnvecbk-rotate:ve34q4os7890@p.webshare.io:80/'
+           'http': 'http://smnpncgs-rotate:2lu1bnuejvkg@p.webshare.io:80/',
+           'https': 'http://smnpncgs-rotate:2lu1bnuejvkg@p.webshare.io:80/'
 }
 
 session = requests.Session()
@@ -66,12 +66,12 @@ async def is_owner(user_id):
 async def helpstr(message: types.Message):
     # await message.answer_chat_action('typing')
     keyboard_markup = types.InlineKeyboardMarkup(row_width=3)
-    btns = types.InlineKeyboardButton("Bot Source", url="https://t.me/ccxentool")
+    btns = types.InlineKeyboardButton("FREE LIVE CC", url="https://t.me/ccxentool")
     keyboard_markup.row(btns)
     FIRST = message.from_user.first_name
     MSG = f'''
 Hello {FIRST}, Im {BOT_NAME}
-U can find my Boss  <a href="tg://user?id={OWNER}">HERE</a>
+U can find my Boss  <a href="tg://user?id={OWNER}">AFN4NX</a>
 Cmds /chk /info /bin'''
     await message.answer(MSG, reply_markup=keyboard_markup,
                         disable_web_page_preview=True)
@@ -96,7 +96,7 @@ async def info(message: types.Message):
 <b>USERNAME:</b> @{username}
 <b>FIRSTNAME:</b> {first}
 <b>BOT:</b> {is_bot}
-<b>BOT-OWNER:</b> {await is_owner(user_id)}
+<b>BOT-OWNER: @AFN4NX </b> 
 ╘═════════''')
 
 
@@ -123,8 +123,8 @@ Phone⇢ <u>{r["phone"]}</u>
 Currency⇢ <u>{r["currency"]}</u>
 Country⇢ <u>{r["country"]}({r["code"]})[{r["flag"]}]</u>
 SENDER: <a href="tg://user?id={ID}">{FIRST}</a>
-BOT⇢ @{BOT_USERNAME}
-OWNER⇢ <a href="tg://user?id={OWNER}">LINK</a>
+BOT BY ⇢ <a href="t.me/afn4nx"></a>
+JOIN NOW⇢ <a href="https://t.me/ccxentool">CCXEN TOOLS</a>
 '''
     await message.reply(INFO)
 
@@ -250,13 +250,13 @@ async def ch(message: types.Message):
         if 'incorrect_cvc' in ri.text:
             return await message.reply(f'''
 ✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ #ApprovedCCN
+<b>STATUS</b>➟ #Approved CHARGED 0.01$ STRIPE
 <b>MSG</b>➟ {ri.text}
 <b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
-<b>OWNER</b>: {await is_owner(ID)}
-<b>BOT</b>: @{BOT_USERNAME}''')
+<b>OWNER</b>: @AFN4NX
+<b>JOIN NOW</b>: @CCXENTOOL''')
 
         if 'declined' in ri.text:
             return await message.reply(f'''
